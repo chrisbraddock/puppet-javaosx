@@ -1,4 +1,7 @@
-# This is a placeholder class.
-class template {
-  anchor { 'Hello_World': }
-}
+class webstorm (
+  $version = '6.0.1a',
+) {
+  package { 'WebStorm':
+    provider => 'appdmg',
+    source   => "http://download.jetbrains.com/python/WebStorm-${version}.dmg",
+  }
