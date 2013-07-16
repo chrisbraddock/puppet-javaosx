@@ -1,5 +1,5 @@
 class webstorm (
-  $version = '6.0.1a',
+  $version = '6.0.2',
 ) {
   package { 'WebStorm':
     provider => 'appdmg',
