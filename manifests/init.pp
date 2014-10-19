@@ -1,11 +1,7 @@
-class webstorm (
-  $version = '9.0-RC',
-  #$server = 'download.jetbrains.com'
-  #$server = 'download-cf.jetbrains.com'
-  $server = 'download-ln.jetbrains.com'
+class puppetJavaOsx (
 ) {
-  package { 'WebStorm':
+  package { 'Java':
     provider => 'appdmg',
-    source   => "http://$server/webstorm/WebStorm-$version.dmg"
+    source   => "http://support.apple.com/downloads/DL1572/en_US/JavaForOSX2014-001.dmg"
   }
 }
